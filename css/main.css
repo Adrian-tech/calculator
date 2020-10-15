@@ -1,0 +1,97 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #033032;
+  background: linear-gradient(135deg, #043c3f 50%, #3c632d 100%);
+}
+
+main .calculator {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[7];
+      grid-template-rows: repeat(7, 1fr);
+  grid-gap: 15px;
+  padding: 20px;
+  width: 450px;
+  height: 70vh;
+  min-height: 600px;
+  background-color: #131212;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7), 1px 1px 15px rgba(0, 0, 0, 0.7), inset 1px 1px 3px rgba(204, 204, 204, 0.4);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7), 1px 1px 15px rgba(0, 0, 0, 0.7), inset 1px 1px 3px rgba(204, 204, 204, 0.4);
+}
+
+main .calculator .screen {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+  background-color: #7f968e;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px #000, inset 0 0 20px #000;
+          box-shadow: inset 0 0 5px #000, inset 0 0 20px #000;
+  font-size: 35px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+main .calculator button {
+  border: none;
+  border-radius: 7px;
+  background-color: #0f0f0f;
+  -webkit-box-shadow: inset 1px 1px 1px rgba(204, 204, 204, 0.5), 2px 2px 5px #000, 2px 2px 5px #000;
+          box-shadow: inset 1px 1px 1px rgba(204, 204, 204, 0.5), 2px 2px 5px #000, 2px 2px 5px #000;
+  font-family: 'Roboto', sans-serif;
+  color: #ddd;
+  font-size: 28px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+main .calculator button:hover {
+  background-color: #131313;
+}
+
+main .calculator .span-two {
+  grid-column: span 2;
+}
+/*# sourceMappingURL=main.css.map */
